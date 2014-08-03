@@ -1,5 +1,13 @@
 // // Exercise #1:
 
+// Recreate the guess a number between 1 and 100. Use the prompt box to help you with this.
+
+// For example:
+// var guess = prompt("Guess a number");
+
+
+// // Exercise #2:
+
 // Do the NASA countdown through the console. That is, the console should say:
 
 // 10
@@ -16,14 +24,28 @@
 
 // Hint: Use a for loop!
 
-// Exercise #2:
+// Exercise #3:
 
 var numbers = [5, 23, 98, 234, 1, 0, 3, 177];
 
 // Write some code that prints all the numbers in the 'numbers' array to the console.
 // Hint: Use a for loop!
 
-// Exercise #3:
+// Exercise #4:
 
-// Write some code that finds the highest number in the 'numbers' array.
+// Write some code that finds the average of all the numbers in the 'numbers' array.
 // Hint: Use a for loop!
+
+// Exercise #5:
+
+// Create a function that accepts an array as an argument and returns the average. (Basically the same as Exercise #3, but wrap that code in a function and demonstrate its usage.)
+
+// Exercise #6:
+
+// Create an object that represents a particular book.
+
+// Exercise #7:
+
+// Create a constructor that allows you to create many different book objects.
+
+

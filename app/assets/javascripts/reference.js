@@ -126,6 +126,30 @@
 
 // Math.floor((Math.random() * 10) + 1);
 
+// // Functions are first class citizens:
+
+// var cool = function() {
+//   console.log("A variable can contain a function!");
+// }
+
+// cool();
+
+// // Functions can also, therefore, be one of the properties of an object
+
+// var car = {
+
+//   model: "Buick",
+//   year: 2004,
+//   miles: 20000,
+//   toString: function () {
+//     return this.model + " has done " + this.miles + " miles";
+//   }
+
+// }
+
+// console.log(car.toString());
+
+
 // // Constructors (the closest thing to Ruby classes)
 
 // function Car( model, year, miles ) {
@@ -136,7 +160,7 @@
  
 //   this.toString = function () {
 //     return this.model + " has done " + this.miles + " miles";
-//   };
+//   }
 // }
  
 // // Usage:

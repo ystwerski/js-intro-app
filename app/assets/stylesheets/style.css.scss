@@ -7,11 +7,27 @@ body {
   .block {
     width: 200px;
     height: 200px;
-    background-color: #db2020;
+    background-color: blue;
     margin: 0px;
   }
 
-  .block.clicked {
-    background-color: #fff;
+  .block.right {
+    background-color: green;
   }
+
+  .block.wrong {
+    background-color: red;
+  }
+}
+
+#tic-tac-toe {
+
+  .block {
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    border-width: 2px;
+    margin: 0px;
+  }
+
 }
