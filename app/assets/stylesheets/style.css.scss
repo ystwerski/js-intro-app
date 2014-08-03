@@ -1,3 +1,17 @@
 body {
-  
+
+}
+
+#puzzle-0 {
+
+  .block {
+    width: 200px;
+    height: 200px;
+    background-color: #db2020;
+    margin: 0px;
+  }
+
+  .block.clicked {
+    background-color: #fff;
+  }
 }
