@@ -1,0 +1,135 @@
+// // // Introducing... JavaScript!
+
+// // Alert
+
+// alert("Hello");
+
+// // The console
+
+// console.log("Hello");
+
+// // Setting Variables
+
+// var x = "well, hello there!";
+
+// console.log(x);
+
+// // Concatenation
+
+// var x = "cat";
+// var y = "fish";
+// console.log(x + y);
+
+// // Numbers: Integers
+
+// var x = 1;
+// var y = 2;
+// console.log(x + y);
+
+// // Numbers: Floats
+
+// var x = 1.5;
+// var y = 4.74;
+// console.log(x + y);
+
+// // Increment and Decrement
+
+// var x = 1;
+// x++;
+// console.log(x);
+// x--;
+// console.log(x);
+
+// // Booleans
+
+// var x = true;
+// var y = false;
+// console.log(x);
+// console.log(y);
+
+// // Arrays
+
+// var people = ["Jane", "John", "Joan"];
+// console.log(people[0]);
+// console.log(people[1]);
+// console.log(people[2]);
+
+// people.push("Cookie Monster");
+// console.log(people);
+// console.log(people.length);
+
+// // Objects (similar to Ruby hashes)
+
+// var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+// console.log(person["firstName"]);
+// console.log(person.lastName);
+
+// // Declaring a variable but leaving it undefined
+
+// var x;
+// console.log(x);
+
+// // typeof - seeing what kind of type something is
+
+// console.log(typeof "John")               
+// console.log(typeof 3.14)               
+// console.log(typeof false)              
+// console.log(typeof [1,2,3,4])          
+// console.log(typeof {name:'John', age:34}) 
+
+// // Functions (similar to Ruby methods, but still quite different, as you'll see later on.)
+
+// function sayHello() {
+//   console.log("Hello!");
+// }
+
+// sayHello();
+
+// function addTwoNumbers(numberOne, numberTwo) {
+//     return numberOne + numberTwo;              
+// }
+
+// console.log(addTwoNumbers(1, 99));
+
+// // Basic scope
+
+// function trickedYa() {
+//   var z = "Zebra";
+//   console.log(z);
+// }
+
+// alert(z);
+
+// // Conditionals
+
+// var x = 33;
+
+// if (x > 50) {
+//   console.log("High number");
+// } else if (x < 25) {
+//   console.log("Low number");
+// } else if (x === 31) {
+//   console.log("My favorite number")
+// } else {
+//   console.log("Medium number");
+// }
+
+// // For loops
+
+// for(var i = 0; i < 10; i++) {
+//   console.log(i);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
