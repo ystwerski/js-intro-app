@@ -9,9 +9,18 @@ function assignSpace(spaceId) {
   spaces[spaceId] = currentTurn;
 }
 
-
 function checkIfWon() {
+  if((spaces[0] && spaces[0] == spaces[1] && spaces[1] == spaces[2]) ||
+     (spaces[3] && spaces[3] == spaces[4] && spaces[4] == spaces[5]) ||
+     (spaces[6] && spaces[6] == spaces[7] && spaces[7] == spaces[8]) ||
+     (spaces[0] && spaces[0] == spaces[3] && spaces[3] == spaces[6]) ||
+     (spaces[1] && spaces[1] == spaces[4] && spaces[4] == spaces[7]) ||
+     (spaces[2] && spaces[2] == spaces[5] && spaces[5] == spaces[8]) ||
+     (spaces[0] && spaces[0] == spaces[4] && spaces[4] == spaces[8]) ||
+     (spaces[2] && spaces[2] == spaces[4] && spaces[4] == spaces[6])) {
 
+     alert(currentTurn.toUpperCase() + " won!");
+  }
 }
 
 function switchTurns() {
@@ -27,10 +36,12 @@ function updateDisplay() {
 function playGame() {
   $(".block").click(function() {
     var spaceId = parseInt($(this).attr("id"));
-    assignSpace(spaceId);
-    console.log(spaces);
-    updateDisplay();
-    checkIfWon();
-    switchTurns();
+    if (!spaces[spaceId]) {
+      assignSpace(spaceId);
+      console.log(spaces);
+      updateDisplay();
+      checkIfWon();
+      switchTurns();
+    }
   });
 }
