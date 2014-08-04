@@ -61,7 +61,9 @@
 // // Objects (similar to Ruby hashes)
 
 // var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
-// console.log(person["firstName"]);
+
+// var x = "firstName"
+// console.log(person[x]);
 // console.log(person.lastName);
 
 // // Declaring a variable but leaving it undefined
@@ -71,11 +73,50 @@
 
 // // typeof - seeing what kind of type something is
 
-// console.log(typeof "John")               
-// console.log(typeof 3.14)               
-// console.log(typeof false)              
-// console.log(typeof [1,2,3,4])          
-// console.log(typeof {name:'John', age:34}) 
+// console.log(typeof "John"); //String            
+// console.log(typeof 3.14);   //number    
+// console.log(typeof false);  //Boolean            
+// console.log(typeof [1,2,3,4]); //Object     
+// console.log(typeof {name:'John', age:34}); //Object
+
+// // Conditionals
+
+// var x = 33;
+
+// if (x > 50) {
+//   console.log("High number");
+// } else if (x < 25) {
+//   console.log("Low number");
+// } else if (x === 31) {
+//   console.log("My favorite number")
+// } else {
+//   console.log("Medium number");
+// }
+
+// // Falsy things:
+
+// if (false) {alert("WAT");}
+// if (null) {alert("WAT");}
+// if (undefined) {alert("WAT");}
+// if (0) {alert("WAT");}
+// if ("") {alert("WAT");}
+// if (NaN) {alert("WAT");}
+
+// // Random numbers:
+
+// // random number between 1 and 10:
+
+// Math.floor((Math.random() * 10) + 1);
+
+// // For loops
+
+// for(var i = 0; i < 10; i++) {
+//   console.log(i);
+// }
+
+// What the above for loop means in English:
+// for(let's set an arbitrary variable called i to be set to 0; let's continue running the loop as long as i is less than 10; each time the loop runs, increase i by 1.)
+// Essentially, this is a loop running 10 times, and in each passthrough, i will be increased by 1. It starts at 0, and ends at 9.
 
 // // Functions (similar to Ruby methods, but still quite different, as you'll see later on.)
 
@@ -96,35 +137,12 @@
 // function trickedYa() {
 //   var z = "Zebra";
 //   console.log(z);
+//   return z;
 // }
 
+// trickedYa();
 // alert(z);
-
-// // Conditionals
-
-// var x = 33;
-
-// if (x > 50) {
-//   console.log("High number");
-// } else if (x < 25) {
-//   console.log("Low number");
-// } else if (x === 31) {
-//   console.log("My favorite number")
-// } else {
-//   console.log("Medium number");
-// }
-
-// // For loops
-
-// for(var i = 0; i < 10; i++) {
-//   console.log(i);
-// }
-
-// // Random numbers:
-
-// // random number between 1 and 10:
-
-// Math.floor((Math.random() * 10) + 1);
+// alert(trickedYa());
 
 // // Functions are first class citizens:
 
@@ -175,8 +193,21 @@
 // console.log( civic );
 // console.log( mondeo.toString() );
 
+// // // jQuery
 
+// // Selectors
 
+// $("p")
+
+// $("#welcome-message")
+
+// $(".code-block")
+
+// $("#welcome-message .code-block")
+
+// // Maniuplation
+
+// $("#welcome-message").text("Whoa!");
 
 
 

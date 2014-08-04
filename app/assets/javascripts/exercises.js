@@ -1,6 +1,6 @@
 // // Exercise #1:
 
-// Recreate the guess a number between 1 and 100. Use the prompt box to help you with this.
+// Recreate the guess a number game between 1 and 100. That is, the computer chooses a random number between 1 and 100, and tells the user to pick higher or lower. The user has 10 tries. Use the prompt box to help you with this.
 
 // For example:
 // var guess = prompt("Guess a number");
