@@ -193,29 +193,3 @@
 // console.log( civic );
 // console.log( mondeo.toString() );
 
-// // // jQuery
-
-// // Selectors
-
-// $("p")
-
-// $("#welcome-message")
-
-// $(".code-block")
-
-// $("#welcome-message .code-block")
-
-// // Maniuplation
-
-// $("#welcome-message").text("Whoa!");
-
-
-
-
-
-
-
-
-
-
-
