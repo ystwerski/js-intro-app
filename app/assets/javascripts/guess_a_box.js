@@ -1,6 +1,6 @@
 var rightAnswer = Math.floor((Math.random() * 3));
 
-function guessNumber(numberGuessed, box) {
+function guessNumber(numberGuessed) {
 
   if (numberGuessed === rightAnswer) {
     alert("You win!");
