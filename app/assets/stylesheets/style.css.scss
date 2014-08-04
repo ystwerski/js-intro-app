@@ -2,20 +2,20 @@ body {
 
 }
 
-#puzzle-0 {
+#box-game {
 
-  .block {
+  .box {
     width: 200px;
     height: 200px;
     background-color: blue;
     margin: 0px;
   }
 
-  .block.right {
+  .box.right {
     background-color: green;
   }
 
-  .block.wrong {
+  .box.wrong {
     background-color: red;
   }
 }
