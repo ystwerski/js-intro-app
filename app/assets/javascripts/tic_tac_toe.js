@@ -1,7 +1,3 @@
-$(function() {
-  playGame();
-});
-
 var spaces = ["", "", "", "", "", "", "", "", ""];
 var currentTurn = "x";
 
@@ -27,21 +23,16 @@ function switchTurns() {
   currentTurn = currentTurn == "x" ? "o" : "x";
 }
 
-function updateDisplay() {
-  for(var i = 0; i < 9; i++) {
-    $("#" + i).addClass(spaces[i]);
-  }
+function updateDisplay(space) {
+  space.className += " " + currentTurn;
 }
 
-function playGame() {
-  $(".block").click(function() {
-    var spaceId = parseInt($(this).attr("id"));
-    if (!spaces[spaceId]) {
-      assignSpace(spaceId);
-      console.log(spaces);
-      updateDisplay();
-      checkIfWon();
-      switchTurns();
-    }
-  });
+function fillSpace(spaceId, space) {
+  if (!spaces[spaceId]) { // a blank string ("") is falsy in JS!
+    assignSpace(spaceId);
+    console.log(spaces);
+    updateDisplay(space);
+    checkIfWon();
+    switchTurns();
+  }
 }
