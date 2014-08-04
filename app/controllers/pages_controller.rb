@@ -7,4 +7,7 @@ class PagesController < ApplicationController
 
   def tic_tac_toe
   end
+
+  def puzzle
+  end
 end

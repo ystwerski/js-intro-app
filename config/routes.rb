@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root 'pages#home'
   get '/guess' => 'pages#guess'
   get '/tic-tac-toe' => 'pages#tic_tac_toe'
+  get '/puzzle' => 'pages#puzzle'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
