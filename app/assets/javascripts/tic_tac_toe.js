@@ -1,24 +1,30 @@
+$(function() {
+  playGame();
+});
+
 var spaces = ["", "", "", "", "", "", "", "", ""];
-var currentTurn = "X";
+var currentTurn = "x";
 
 function assignSpace(spaceId) {
   spaces[spaceId] = currentTurn;
 }
 
-function updateDisplay() {
-
-}
 
 function checkIfWon() {
 
 }
 
 function switchTurns() {
-
+  currentTurn = currentTurn == "x" ? "o" : "x";
 }
 
-$(function() {
+function updateDisplay() {
+  for(var i = 0; i < 9; i++) {
+    $("#" + i).addClass(spaces[i]);
+  }
+}
 
+function playGame() {
   $(".block").click(function() {
     var spaceId = parseInt($(this).attr("id"));
     assignSpace(spaceId);
@@ -27,5 +33,4 @@ $(function() {
     checkIfWon();
     switchTurns();
   });
-
-});
+}

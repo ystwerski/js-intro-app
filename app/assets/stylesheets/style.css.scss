@@ -30,4 +30,12 @@ body {
     margin: 0px;
   }
 
+  .block.x {
+    background-image: image-url("x.png");
+  }
+
+  .block.o {
+    background-image: image-url("o.png");
+  }
+
 }

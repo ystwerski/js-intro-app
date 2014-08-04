@@ -2,7 +2,7 @@ var rightAnswer = Math.floor((Math.random() * 3));
 
 $(function() {
 
-  $(".block").click(function() {
+  $("#box-game .block").click(function() {
     var numberGuessed = parseInt($(this).attr("id"));
 
     if (numberGuessed === rightAnswer) {
