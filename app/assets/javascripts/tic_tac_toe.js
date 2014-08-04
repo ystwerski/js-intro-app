@@ -15,12 +15,20 @@ function checkIfWon() {
      (spaces[0] && spaces[0] == spaces[4] && spaces[4] == spaces[8]) ||
      (spaces[2] && spaces[2] == spaces[4] && spaces[4] == spaces[6])) {
 
-     alert(currentTurn.toUpperCase() + " won!");
+    gameOver();
   }
 }
 
 function switchTurns() {
-  currentTurn = currentTurn == "x" ? "o" : "x";
+  if (currentTurn === "x") {
+    currentTurn = "o";
+  } else {
+    currentTurn = "x";
+  }
+}
+
+function gameOver() {
+  alert(currentTurn.toUpperCase() + " wins!");
 }
 
 function updateDisplay(space) {
