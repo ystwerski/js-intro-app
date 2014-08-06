@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/tic-tac-toe' => 'pages#tic_tac_toe'
   get '/puzzle' => 'pages#puzzle'
   get '/memory' => 'pages#memory'
+  get '/abc' => 'pages#abc'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -12,6 +12,8 @@ class PagesController < ApplicationController
   end
 
   def memory
-    
+  end
+
+  def abc
   end
 end
