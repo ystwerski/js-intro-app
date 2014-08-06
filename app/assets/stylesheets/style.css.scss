@@ -52,13 +52,16 @@ body {
   
 }
 
-#matching-game {
+#memory-game {
 
   .box {
     width: 150px;
     height: 150px;
     background-color: blue;
     margin: 0px;
+    font-size: 42px;
+    color: white;
+    text-align: center;
   }
 
   // .box.right {
