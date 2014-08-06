@@ -86,7 +86,7 @@ body {
   .box {
     width: 150px;
     height: 150px;
-    background-color: red;
+    background-color: blue;
     margin: 0px;
     font-size: 104px;
     color: white;
@@ -95,7 +95,7 @@ body {
   }
 
   .box.highlighted {
-    background-color: green;
+    background-color: yellow;
   }
 
 }

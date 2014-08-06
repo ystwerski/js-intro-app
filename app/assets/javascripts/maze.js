@@ -1,3 +1,5 @@
-function moveToSegment(box) {
-  
+
+
+function moveToSegment(space, box) {
+
 }
