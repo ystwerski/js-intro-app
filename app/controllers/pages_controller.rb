@@ -10,4 +10,8 @@ class PagesController < ApplicationController
 
   def puzzle
   end
+
+  def memory
+    
+  end
 end

@@ -1,10 +1,6 @@
 var spaces = ["", "", "", "", "", "", "", "", ""];
 var currentTurn = "x";
 
-function assignSpace(spaceId) {
-  spaces[spaceId] = currentTurn;
-}
-
 function checkIfWon() {
   if((spaces[0] && spaces[0] == spaces[1] && spaces[1] == spaces[2]) ||
      (spaces[3] && spaces[3] == spaces[4] && spaces[4] == spaces[5]) ||
@@ -15,32 +11,40 @@ function checkIfWon() {
      (spaces[0] && spaces[0] == spaces[4] && spaces[4] == spaces[8]) ||
      (spaces[2] && spaces[2] == spaces[4] && spaces[4] == spaces[6])) {
 
-    gameOver();
+    alert('Youve won!!');
   }
 }
 
-function switchTurns() {
-  if (currentTurn === "x") {
-    currentTurn = "o";
-  } else {
+function addSpace(position){
+  if(currentTurn === "x"){
+    spaces[position] = "x";
+  }else{
+    spaces[position] = "o";
+  }
+}
+
+function switchTurn(){
+  if(currentTurn === "x"){
+    currentTurn = "o"
+  }else{
     currentTurn = "x";
   }
 }
 
-function gameOver() {
-  alert(currentTurn.toUpperCase() + " wins!");
-}
-
-function updateDisplay(space) {
-  space.className += " " + currentTurn;
-}
-
-function fillSpace(spaceId, space) {
-  if (!spaces[spaceId]) { // a blank string ("") is falsy in JS!
-    assignSpace(spaceId);
-    console.log(spaces);
-    updateDisplay(space);
-    checkIfWon();
-    switchTurns();
+function fillInSpace(box){
+  if(currentTurn === "x"){
+    box.className += " x";
+  }else{
+    box.className += " o";
   }
 }
+
+function takeTurn(boxNum, box){
+  addSpace(boxNum);
+  fillInSpace(box);
+  checkIfWon();
+  switchTurn();
+}
+
+
+
