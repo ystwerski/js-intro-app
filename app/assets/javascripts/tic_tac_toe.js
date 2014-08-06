@@ -11,16 +11,12 @@ function checkIfWon() {
      (spaces[0] && spaces[0] == spaces[4] && spaces[4] == spaces[8]) ||
      (spaces[2] && spaces[2] == spaces[4] && spaces[4] == spaces[6])) {
 
-    alert('Youve won!!');
+    alert(currentTurn + ' wins!');
   }
 }
 
 function addSpace(position){
-  if(currentTurn === "x"){
-    spaces[position] = "x";
-  }else{
-    spaces[position] = "o";
-  }
+  spaces[position] = currentTurn;
 }
 
 function switchTurn(){
@@ -32,11 +28,7 @@ function switchTurn(){
 }
 
 function fillInSpace(box){
-  if(currentTurn === "x"){
-    box.className += " x";
-  }else{
-    box.className += " o";
-  }
+  box.className += " " + currentTurn;
 }
 
 function takeTurn(boxNum, box){
