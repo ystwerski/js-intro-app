@@ -51,3 +51,21 @@ body {
   }
   
 }
+
+#matching-game {
+
+  .box {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    margin: 0px;
+  }
+
+  // .box.right {
+  //   background-color: green;
+  // }
+
+  // .box.wrong {
+  //   background-color: red;
+  // }
+}
