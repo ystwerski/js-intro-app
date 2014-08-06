@@ -16,4 +16,7 @@ class PagesController < ApplicationController
 
   def abc
   end
+
+  def maze
+  end
 end
