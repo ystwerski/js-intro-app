@@ -3,11 +3,19 @@ var placeHolder = 0;
 
 function clickLetter(letterBox) {
   var letter = letterBox.innerHTML;
-  if(letter === abcs[placeHolder]) {
+  if (isNextLetter(letter)) {
     placeHolder++;
     letterBox.style.visibility = "hidden";
+    checkWon();
   }
-  if(placeHolder == 26) {
+}
+
+function isNextLetter(letter) {
+  return (letter === abcs[placeHolder]);
+}
+
+function checkWon() {
+  if(placeHolder === 26) {
     alert("You win!");
   }
 }
