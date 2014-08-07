@@ -12,22 +12,4 @@ function guessBox(boxGuessed) {
 
 }
 
-// // More advanced version:
-
-// var winningBox = Math.floor((Math.random() * 3));
-
-// function guessBox(boxGuessed, box) {
-
-//   if (boxGuessed === winningBox) {
-//     box.className += " right";
-//     document.getElementById("winning-message").innerHTML = "You win!";
-//   } else {
-//     box.className += " wrong";
-//   }
-
-// }
-
-
-
-
 
