@@ -1,10 +1,8 @@
 // // Exercise #1:
 
-// Recreate the guess a number game between 1 and 100. That is, the computer chooses a random number between 1 and 100, and tells the user to pick higher or lower. The user has 10 tries. Use the prompt box to help you with this.
-
+// Recreate the guess a number game between 1 and 100. That is, the computer chooses a random number between 1 and 100, and tells the user to pick higher or lower. The user has 10 tries. Use the prompt function to help you with this.
 // For example:
 // var guess = prompt("Guess a number");
-
 
 // // Exercise #2:
 
@@ -24,28 +22,39 @@
 
 // Hint: Use a for loop!
 
-// Exercise #3:
+// // Exercise #3:
 
-var numbers = [5, 23, 98, 234, 1, 0, 3, 177];
+// var numbers = [5, 23, 98, 234, 1, 0, 3, 177];
 
 // Write some code that prints all the numbers in the 'numbers' array to the console.
+
 // Hint: Use a for loop!
 
-// Exercise #4:
+// // Exercise #4:
 
-// Write some code that finds the average of all the numbers in the 'numbers' array.
+// Write code that finds the average of all the numbers in the 'numbers' array.
 // Hint: Use a for loop!
 
-// Exercise #5:
+// // Exercise #5:
 
-// Create a function that accepts an array as an argument and returns the average. (Basically the same as Exercise #3, but wrap that code in a function and demonstrate its usage.)
+// Implement FizzBuzz in JavaScript.
 
-// Exercise #6:
+// // Exercise #6:
 
-// Create an object that represents a particular book.
+// Create a function that accepts two numbers as parameters and returns their sum.
 
-// Exercise #7:
+// // Exercise #7:
 
-// Create a constructor that allows you to create many different book objects.
+// Create a function that accepts an array as an argument and returns the average. (Basically the same as Exercise #4, but wrap that code in a function and demonstrate its usage.)
+
+// // Exercise #8:
+
+// Create an object that represents a particular book, having attributes of title, author, isbn, pages, and year of publication.
+
+// // Exercise #9:
+
+// Add a function to the above book object that console.logs out all the above information 
+
+
 
 

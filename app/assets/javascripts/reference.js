@@ -60,7 +60,7 @@
 
 // // Objects (similar to Ruby hashes)
 
-// var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+// var person = { firstName: "John", lastName: "Doe", age: 50, eyeColor: "blue"};
 
 // var x = "firstName"
 // console.log(person[x]);
@@ -107,6 +107,21 @@
 // // random number between 1 and 10:
 
 // Math.floor((Math.random() * 10) + 1);
+
+// // While loops
+
+// while (i < 10) {
+//     text += "The number is " + i;
+//     i++;
+// }
+
+// // Do/While loops
+
+// do {
+//     text += "The number is " + i;
+//     i++;
+// }
+// while (i < 10);
 
 // // For loops
 
@@ -166,30 +181,4 @@
 // }
 
 // console.log(car.toString());
-
-
-// // Constructors (the closest thing to Ruby classes)
-
-// function Car( model, year, miles ) {
- 
-//   this.model = model;
-//   this.year = year;
-//   this.miles = miles;
- 
-//   this.toString = function () {
-//     return this.model + " has done " + this.miles + " miles";
-//   }
-// }
- 
-// // Usage:
- 
-// // We can create new instances of the car
-// var civic = new Car( "Honda Civic", 2009, 20000 );
-// var mondeo = new Car( "Ford Mondeo", 2010, 5000 );
- 
-// // and then open our browser console to view the
-// // output of the toString() method being called on
-// // these objects
-// console.log( civic );
-// console.log( mondeo.toString() );
 
