@@ -83,6 +83,18 @@
 // console.log(typeof [1,2,3,4]); //Object     
 // console.log(typeof {name:'John', age:34}); //Object
 
+// // Casting
+
+// To convert a string into a number:
+
+// var str = "234";
+// var num = parseInt(str);
+
+// To convert a number into a string:
+
+// var num = 234
+// var str = num.toString();
+
 // // Conditionals
 
 // if (x > 50) {
