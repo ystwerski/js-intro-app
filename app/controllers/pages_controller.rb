@@ -5,6 +5,9 @@ class PagesController < ApplicationController
   def guess
   end
 
+  def interact
+  end
+
   def tic_tac_toe
   end
 

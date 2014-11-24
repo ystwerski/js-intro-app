@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'pages#home'
   get '/guess' => 'pages#guess'
+  get '/interact' => 'pages#interact'
   get '/tic-tac-toe' => 'pages#tic_tac_toe'
   get '/puzzle' => 'pages#puzzle'
   get '/memory' => 'pages#memory'
