@@ -8,4 +8,7 @@ class PagesController < ApplicationController
   def interact
   end
 
+  def three
+  end
+
 end
