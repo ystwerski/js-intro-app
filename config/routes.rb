@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get '/interact' => 'pages#interact'
   get '/three' => 'pages#three'
   get '/numbers' => 'pages#numbers'
+  get '/click5' => 'pages#click5'
+  get '/fillinall3' => 'pages#fillinall3'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

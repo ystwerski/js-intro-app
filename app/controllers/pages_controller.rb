@@ -14,4 +14,11 @@ class PagesController < ApplicationController
   def numbers
   end
 
+  def click5
+
+  end
+
+  def fillinall3
+  end
+
 end

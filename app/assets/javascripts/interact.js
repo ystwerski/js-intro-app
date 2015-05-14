@@ -1,6 +1,6 @@
 function changeColor(box) {
   // .style["CSS-ATTRIBUTE"] can change the styling of the element
-  box.style["background-color"] = "blue";
+  box.style["background-color"] = "red";
 }
 
 function addText(box) {
